@@ -1,0 +1,51 @@
+.container {
+  display: flex;
+  justify-content: center;
+
+  .chart-outer-container {
+    width: 50em;
+
+    h3 {
+      text-align: center;
+    }
+
+    form {
+      text-align: center;
+
+      mat-radio-button {
+        margin-right: 1em;
+      }
+    }
+
+    .chart-container {
+      height: 400px;
+      width: 700px;
+      margin: 0 auto;
+    }
+  }
+
+  .history-container {
+    width: 35em;
+
+    h3 {
+      text-align: center;
+    }
+
+    .history-record {
+      margin-top: .5em;
+    }
+    .history-date {
+      font-size: .75em;
+    }
+
+    .history-message-success {
+      color: green;
+    }
+
+    .history-message-failure {
+      color: red;
+    }
+  }
+
+}
+

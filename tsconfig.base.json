@@ -14,7 +14,14 @@
     "skipLibCheck": true,
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
-    "paths": {}
+    "paths": {
+      "@atm-app/atms/overview-page": ["libs/atms/overview-page/src/index.ts"],
+      "@atm-app/atms/restock-page": ["libs/atms/restock-page/src/index.ts"],
+      "@atm-app/atms/state": ["libs/atms/state/src/index.ts"],
+      "@atm-app/atms/toast-creator": ["libs/atms/toast-creator/src/index.ts"],
+      "@atm-app/atms/withdraw-page": ["libs/atms/withdraw-page/src/index.ts"],
+      "@atm-app/shared/header": ["libs/shared/header/src/index.ts"]
+    }
   },
   "exclude": ["node_modules", "tmp"]
 }

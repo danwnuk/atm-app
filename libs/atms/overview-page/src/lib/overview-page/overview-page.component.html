@@ -1,0 +1,58 @@
+<div class="container">
+  <div class="chart-outer-container">
+    <h3>ATM Inventory by Denomination</h3>
+
+    <form #chartTypeForm="ngForm">
+      <mat-radio-group name="chartType" [(ngModel)]="chartType" aria-label="Select an option">
+        <mat-radio-button value="bar" [checked]="true">Bar Chart</mat-radio-button>
+        <mat-radio-button value="pie">Pie Chart</mat-radio-button>
+      </mat-radio-group>
+    </form>
+
+    <div class="chart-container">
+      <ngx-charts-bar-vertical *ngIf="chartType === 'bar'"
+        [view]="barChartOptions.view"
+        [scheme]="barChartOptions.colorScheme"
+        [results]="chartData"
+        [gradient]="barChartOptions.gradient"
+        [legend]="barChartOptions.showLegend"
+        [xAxis]="barChartOptions.showXAxis"
+        [yAxis]="barChartOptions.showYAxis"
+        [showXAxisLabel]="barChartOptions.showXAxisLabel"
+        [showYAxisLabel]="barChartOptions.showYAxisLabel"
+        [xAxisLabel]="barChartOptions.xAxisLabel"
+        [yAxisLabel]="barChartOptions.yAxisLabel"
+      >
+
+      </ngx-charts-bar-vertical>
+
+      <ngx-charts-pie-chart *ngIf="chartType === 'pie'"
+        [view]="pieChartOptions.view"
+        [scheme]="pieChartOptions.colorScheme"
+        [results]="chartData"
+        [gradient]="pieChartOptions.gradient"
+        [legend]="pieChartOptions.showLegend"
+        [legendPosition]="pieChartOptions.legendPosition"
+        [labels]="pieChartOptions.showLabels"
+        [doughnut]="pieChartOptions.isDoughnut"
+        >
+      </ngx-charts-pie-chart>
+    </div>
+  </div>
+
+  <div class="history-container">
+    <h3>ATM History</h3>
+    <div class="history-record" *ngFor="let record of history">
+      <div class="history-date">
+        Date: {{ record.date | date:'medium' }}
+      </div>
+
+      <div class="history-message-{{ record.success ? 'success' : 'failure' }}">
+        {{ record.message }}
+      </div>
+    </div>
+    <div *ngIf="(history$ | async)?.length === 0">
+      No history available.
+    </div>
+  </div>
+</div>

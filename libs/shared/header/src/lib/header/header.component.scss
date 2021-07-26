@@ -1,0 +1,18 @@
+.atm-app-header {
+  width: 100%;
+
+  .mat-button-focus-overlay {
+    background-color: transparent;
+  }
+
+  .title {
+    display: inline-flex;
+    align-items: center;
+
+    mat-icon {
+      color: #673ab7;
+      font-size: 2em;
+      margin-right: .15em;
+    }
+  }
+}

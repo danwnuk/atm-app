@@ -1,0 +1,10 @@
+<form #withdrawForm="ngForm" (submit)="withdraw(withdrawForm.value.amount)">
+  <h2>Withdraw Money</h2>
+  <mat-form-field>
+    <mat-label>Amount</mat-label>
+    <input matInput type="text" id="amount" name="amount" ngModel placeholder="Enter amount" required pattern="[0-9]*">
+    <mat-error>Please enter a valid amount. Whole numbers only.</mat-error>
+  </mat-form-field>
+
+  <button type="submit" mat-raised-button color="primary" [disabled]="!withdrawForm.valid">Withdraw</button>
+</form>

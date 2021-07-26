@@ -33,6 +33,24 @@
     "atm-app-e2e": {
       "tags": [],
       "implicitDependencies": ["atm-app"]
+    },
+    "atms-overview-page": {
+      "tags": []
+    },
+    "atms-restock-page": {
+      "tags": []
+    },
+    "atms-state": {
+      "tags": []
+    },
+    "atms-toast-creator": {
+      "tags": []
+    },
+    "atms-withdraw-page": {
+      "tags": []
+    },
+    "shared-header": {
+      "tags": []
     }
   }
 }

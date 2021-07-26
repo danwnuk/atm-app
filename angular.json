@@ -119,6 +119,156 @@
           }
         }
       }
+    },
+    "atms-overview-page": {
+      "projectType": "library",
+      "root": "libs/atms/overview-page",
+      "sourceRoot": "libs/atms/overview-page/src",
+      "prefix": "atm-app",
+      "architect": {
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "outputs": ["coverage/libs/atms/overview-page"],
+          "options": {
+            "jestConfig": "libs/atms/overview-page/jest.config.js",
+            "passWithNoTests": true
+          }
+        },
+        "lint": {
+          "builder": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": [
+              "libs/atms/overview-page/src/**/*.ts",
+              "libs/atms/overview-page/src/**/*.html"
+            ]
+          }
+        }
+      }
+    },
+    "atms-restock-page": {
+      "projectType": "library",
+      "root": "libs/atms/restock-page",
+      "sourceRoot": "libs/atms/restock-page/src",
+      "prefix": "atm-app",
+      "architect": {
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "outputs": ["coverage/libs/atms/restock-page"],
+          "options": {
+            "jestConfig": "libs/atms/restock-page/jest.config.js",
+            "passWithNoTests": true
+          }
+        },
+        "lint": {
+          "builder": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": [
+              "libs/atms/restock-page/src/**/*.ts",
+              "libs/atms/restock-page/src/**/*.html"
+            ]
+          }
+        }
+      }
+    },
+    "atms-state": {
+      "projectType": "library",
+      "root": "libs/atms/state",
+      "sourceRoot": "libs/atms/state/src",
+      "prefix": "atm-app",
+      "architect": {
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "outputs": ["coverage/libs/atms/state"],
+          "options": {
+            "jestConfig": "libs/atms/state/jest.config.js",
+            "passWithNoTests": true
+          }
+        },
+        "lint": {
+          "builder": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": [
+              "libs/atms/state/src/**/*.ts",
+              "libs/atms/state/src/**/*.html"
+            ]
+          }
+        }
+      }
+    },
+    "atms-toast-creator": {
+      "projectType": "library",
+      "root": "libs/atms/toast-creator",
+      "sourceRoot": "libs/atms/toast-creator/src",
+      "prefix": "atm-app",
+      "architect": {
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "outputs": ["coverage/libs/atms/toast-creator"],
+          "options": {
+            "jestConfig": "libs/atms/toast-creator/jest.config.js",
+            "passWithNoTests": true
+          }
+        },
+        "lint": {
+          "builder": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": [
+              "libs/atms/toast-creator/src/**/*.ts",
+              "libs/atms/toast-creator/src/**/*.html"
+            ]
+          }
+        }
+      }
+    },
+    "atms-withdraw-page": {
+      "projectType": "library",
+      "root": "libs/atms/withdraw-page",
+      "sourceRoot": "libs/atms/withdraw-page/src",
+      "prefix": "atm-app",
+      "architect": {
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "outputs": ["coverage/libs/atms/withdraw-page"],
+          "options": {
+            "jestConfig": "libs/atms/withdraw-page/jest.config.js",
+            "passWithNoTests": true
+          }
+        },
+        "lint": {
+          "builder": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": [
+              "libs/atms/withdraw-page/src/**/*.ts",
+              "libs/atms/withdraw-page/src/**/*.html"
+            ]
+          }
+        }
+      }
+    },
+    "shared-header": {
+      "projectType": "library",
+      "root": "libs/shared/header",
+      "sourceRoot": "libs/shared/header/src",
+      "prefix": "atm-app",
+      "architect": {
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "outputs": ["coverage/libs/shared/header"],
+          "options": {
+            "jestConfig": "libs/shared/header/jest.config.js",
+            "passWithNoTests": true
+          }
+        },
+        "lint": {
+          "builder": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": [
+              "libs/shared/header/src/**/*.ts",
+              "libs/shared/header/src/**/*.html"
+            ]
+          }
+        }
+      }
     }
   },
   "cli": {
